@@ -1,0 +1,114 @@
+/* File: public/css/style.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Mengatur elemen dalam kolom vertikal */
+}
+
+/* Styling untuk card dengan hover effect */
+.todo-card {
+    transition: transform 0.3s ease;
+}
+
+/* Efek hover pada card */
+.todo-card:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    flex: 1; /* Memastikan container utama mengisi ruang antara header dan footer */
+}
+.container .row {
+    max-width: 900px;
+    display: flex;             
+    justify-content: center;   
+    align-items: center;       
+    margin: 0 auto;   
+    margin-bottom: 50px;         
+}
+
+
+/* Styling untuk task yang sudah selesai */
+.completed {
+    text-decoration: line-through;
+}
+
+/* Memberikan padding pada card dan shadow */
+.card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;   /* Mengatur isi card dalam kolom vertikal */
+    justify-content: space-between; /* Menjaga ruang antara konten dan tombol */
+    height: 150px;            /* Sesuaikan tinggi card sesuai kebutuhan */
+}
+
+/* Styling untuk card-body */
+.card-body {
+    display: flex;
+    flex-direction: column;   /* Mengatur isi card-body dalam kolom */
+    justify-content: center;  /* Menengahkan secara vertikal */
+    text-align: center;       /* Mengatur teks ke tengah */
+    flex-grow: 1;             /* Membuat card-body mengambil ruang yang tersedia */
+}
+
+/* Styling untuk tombol Edit dan Delete */
+.card-body .btn {
+    margin-right: 10px; /* Memberikan jarak antar tombol */
+    margin-top: 10px;    /* Memberikan jarak atas tombol */
+}
+
+/* Mengatur tombol Edit dan Delete berdampingan */
+.card-body .btn-group {
+    display: flex;       /* Membuat tombol terletak berdampingan */
+    justify-content: center; /* Menengahkan tombol di dalam grup */
+    margin-top: 10px;     /* Memberikan jarak antar konten dan tombol */
+}
+
+/* Gaya untuk group tombol Edit dan Delete */
+.card-body .btn-group .btn {
+    margin: 0 5px; /* Memberikan jarak antar tombol */
+}
+
+/* Gaya form input */
+.input-group {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Button Add Task */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Modal styling */
+.modal-body .form-group {
+    margin-bottom: 1rem;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #f8f9fa; /* Warna latar belakang abu-abu terang */
+    padding: 20px 0; /* Menambahkan padding pada atas dan bawah */
+    width: 100%; /* Pastikan footer memenuhi lebar penuh */
+    text-align: center;
+    border-top: 1px solid #ddd; /* Garis pemisah di atas footer */
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+    color: #6c757d; 
+    font-size: 14px;
+}

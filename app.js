@@ -9,7 +9,7 @@ const session = require('express-session');
 const authRoutes = require('./routes/authRoutes');
 const { isAuthenticated } = require('./middlewares/middleware.js');
 
-
+app.use('/public',express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(expressLayouts);

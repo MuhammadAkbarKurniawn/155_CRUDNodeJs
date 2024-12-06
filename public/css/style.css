@@ -1,0 +1,101 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Mengatur elemen dalam kolom vertikal */
+}
+
+.container {
+    flex: 1; /* Memastikan container utama mengisi ruang antara header dan footer */
+}
+/* Styling for the container */
+.container.row {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+
+}
+
+/* Styling for the heading */
+.container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Styling for the paragraph */
+.container p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Styling for the button group */
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Styling for the buttons */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #28a745;
+}
+
+.btn-secondary:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+.footer {
+    background-color: #f8f9fa; /* Warna latar belakang abu-abu terang */
+    padding: 20px 0; /* Menambahkan padding pada atas dan bawah */
+    width: 100%; /* Pastikan footer memenuhi lebar penuh */
+    text-align: center;
+    border-top: 1px solid #ddd; /* Garis pemisah di atas footer */
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+    color: #6c757d; 
+    font-size: 14px;
+}

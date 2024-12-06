@@ -1,0 +1,86 @@
+/* Styling for the container */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; 
+}
+/* Styling for form labels */
+.form-group label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Styling for input and textarea fields */
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Hover and focus effects for input and textarea */
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    outline: none;
+}
+
+/* Styling for the button */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for the button */
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Styling for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    button[type="submit"] {
+        font-size: 1rem;
+    }
+}
+
+.footer {
+    background-color: #f8f9fa; 
+    padding: 20px 0; 
+    text-align: center;
+    border-top: 1px solid #ddd; 
+    color: #6c757d;
+    font-size: 14px;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    color: #6c757d; 
+    font-size: 14px;
+}
